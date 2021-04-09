@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin</title>
+    <link rel="stylesheet" href="frameworks/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="frameworks/FontAwesome/css/all.min.css">
+	<link rel="stylesheet" href="style/style-panel-admin.css">
+</head>
+
+<body dir="rtl">
+	<input type="checkbox" name="" id="nav-toggle" checked>
+	<div class="sidebar">
+		<div class="sidebar-brand">
+			<img src="images/logo-icon-150px-shiftcoder.png" alt="shiftcoder" width="40px" height="40px" class="img-min-menu">
+			<h2><a href="#">Shift<span class="title-red">Coder</span></a></h2>
+		</div>
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<a href="#" class="active-menu-link">
+						<i class="fal fa-tachometer-alt icon-menu"></i> <span>پنل مدیریت</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fal fa-user-graduate icon-menu"></i> <span>دانشجویان</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fal fa-shopping-bag icon-menu"></i> <span>محصولات</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fal fa-chart-bar icon-menu"></i> <span>سفارشات</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fal fa-graduation-cap icon-menu"></i> <span>آموزش ها</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fal fa-cog icon-menu"></i> <span>تنظیمات</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fal fa-sign-out icon-menu"></i> <span>خروج از پنل</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main-content">
+		<header>
+			<h3>
+				<label for="nav-toggle">
+					<i class="fal fa-bars hamburger-icon-header"></i>
+				</label>
+				<span>پنل مدیریت</span>
+			</h3>
+			<div class="search-wrapper">
+				<i class="fal fa-search search-wrapper-icon"></i>
+				<input type="search" name="" id="" placeholder="دنبال چی میگردی ...">
+			</div>
+			<div class="user-wrapper">
+				<img src="images/profile-1.jpg" alt="profile user" width="40px" height="40px">
+				<div>
+					<h4>ماهان فروزنده</h4>
+					<small>ادمین</small>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="cards">
+				<div class="card-single">
+					<div>
+						<h1>154</h1>
+						<span>دانشجو</span>
+					</div>
+					<div>
+						<i class="fal fa-users"></i>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h1>4</h1>
+						<span>مدرس</span>
+					</div>
+					<div>
+						<i class="fal fa-user-chart"></i>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h1>14</h1>
+						<span>دوره آموزشی</span>
+					</div>
+					<div>
+						<i class="fal fa-users-class"></i>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h1>1,450,000 <small>تومان</small></h1>
+						<span>درآمد</span>
+					</div>
+					<div>
+						<i class="fal fa-money-check-alt"></i>
+					</div>
+				</div>
+			</div>
+			<div class="recent-grid">
+				<div class="courses">
+					<div class="card-new">
+						<div class="card-header-new">
+							<h5>آخرین دوره ها</h5>
+							<button>شماهده همه <i class="fal fa-angle-double-left icon-btn-see-all"></i></button>
+						</div>
+						<div class="card-body-new">
+							<div class="table-responsive">
+								<table width="100%">
+									<thead>
+										<tr>
+											<th>عنوان دوره</th>
+											<th>وضعیت دوره</th>
+											<th>تعداد دانجشویان</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>آموزش Photoshop مقدماتی تا پیشرفته</td>
+											<td>
+												<span class="status orange-status"></span>
+												در حال برگذاری
+											</td>
+											<td>380 دانشجو</td>
+										</tr>
+										<tr>
+											<td>صفر تا صد html css پروژه محور</td>
+											<td>
+												<span class="status green-status"></span>
+												به اتمام رسیده
+											</td>
+											<td>520 دانشجو</td>
+										</tr>
+										<tr>
+											<td>آموزش جاوا اسکریپت مقدماتی</td>
+											<td>
+												<span class="status orange-status"></span>
+												در حال برگذاری
+											</td>
+											<td>645 دانشجو</td>
+										</tr>
+										<tr>
+											<td>آموزش Illustrator مقدماتی تا پیشرفته</td>
+											<td>
+												<span class="status orange-status"></span>
+												در حال برگذاری
+											</td>
+											<td>198 دانشجو</td>
+										</tr>
+										<tr>
+											<td>Adobe XD حرفه ای کاملا پروژه محور</td>
+											<td>
+												<span class="status green-status"></span>
+												به اتمام رسیده
+											</td>
+											<td>75 دانشجو</td>
+										</tr>
+										<tr>
+											<td>آموزش Sass , Less</td>
+											<td>
+												<span class="status orange-status"></span>
+												در حال برگذاری
+											</td>
+											<td>164 دانشجو</td>
+										</tr>
+										<tr>
+											<td>با Dreamweaver حرفه ای کد بزن</td>
+											<td>
+												<span class="status orange-status"></span>
+												در حال برگذاری
+											</td>
+											<td>198 دانشجو</td>
+										</tr>
+										<tr>
+											<td>همه کاره ی VSCode</td>
+											<td>
+												<span class="status green-status"></span>
+												به اتمام رسیده
+											</td>
+											<td>75 دانشجو</td>
+										</tr>
+										<tr>
+											<td>آموزش BootStrap 5</td>
+											<td>
+												<span class="status orange-status"></span>
+												در حال برگذاری
+											</td>
+											<td>164 دانشجو</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="customers">
+					<div class="card-new">
+						<div class="card-header-new card-head-customer">
+							<h5>دانشجویان جدید</h5>
+							<button>شماهده همه <i class="fal fa-angle-double-left icon-btn-see-all"></i></button>
+						</div>
+						<div class="card-body-new">
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-2.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-3.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-4.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-5.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-6.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-7.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-8.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+							<div class="customer">
+								<div class="info">
+									<img src="images/profile-9.jpg" width="40px" height="40px" alt="Profile Customer">
+									<div>
+										<h6>نام و نام کامل خانوادگی</h6>
+									</div>
+								</div>
+								<div class="content">
+									<a href="#"><i class="fal fa-user-circle icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-comment-lines icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-phone icon-content-customer"></i></a>
+									<a href="#"><i class="fal fa-envelope icon-content-customer"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+</body>
+<script src="frameworks/bootstrap/bootstrap.min.js"></script>
+<script src="frameworks/FontAwesome/js/all.min.js"></script>
+
+</html>

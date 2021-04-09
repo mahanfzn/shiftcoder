@@ -1,0 +1,63 @@
+$color_black: #000000;
+$color_red: #d71920;
+$color_light_red:#eb3233;
+$color_green:#82bc03;
+$color_gray:#5c546b;
+$color_dark_blue:#153248;
+$color_yellow:#ede622;
+$color_light:#c7c7c7;
+$color_white:#fafafa;
+$font-sahel: Sahel,
+tahoma;
+$font-IranSansBold: IranSansBold,
+tahoma;
+$font-IranSans: IranSans,
+tahoma;
+@font-face {
+    font-family: Sahel;
+    src: url("../fonts/Sahel.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: IranSansBold;
+    src: url("../fonts/IRANSans-Bold.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url("../fonts/IRANSans.ttf");
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-IranSans;
+    background-color: $color_white;
+    direction: rtl;
+    max-width: 100vw;
+    overflow-x:hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    -webkit-appearance: textfield;
+}

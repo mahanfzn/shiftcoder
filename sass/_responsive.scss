@@ -1,0 +1,90 @@
+@media screen and (max-width:576px) {
+    #social-container-header {
+        display: none;
+    }
+
+    .container-full-packages {
+        display: none;
+    }
+
+    .chat-display-item-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #news-span {
+        display: none;
+    }
+
+    #social-container-header {
+        width: 46%;
+    }
+
+    .arrow-down-header {
+        width: 12px;
+    }
+
+    #container-section-bottom-header {
+        display: none;
+    }
+
+    .section-bottom-header {
+        padding-bottom: 20px;
+    }
+
+    #container-meta-section {
+        display: none;
+    }
+
+    .container-name-section-content {
+        margin-top: 20px;
+    }
+
+    #container-title-footer {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 40px 0 0;
+
+    }
+
+    #title-info-footer {
+        text-align: center;
+    }
+
+    #title-p-footer {
+        text-align: center;
+    }
+
+    #container-newsletters-footer {
+        margin: 35px 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #meta-section-article {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #meta-section-teacher {
+        display: none;
+    }
+
+    #section-bottom-header-video {
+        display: none;
+    }
+
+    .container-name-section-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .line-section-content {
+        display: none;
+    }
+}
