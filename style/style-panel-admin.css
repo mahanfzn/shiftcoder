@@ -409,7 +409,7 @@ td .status{
 
 @media only screen and (min-width:576px) {
     .cards{
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 	}
 	.recent-grid{
 		grid-template-columns: 100%;
@@ -418,7 +418,7 @@ td .status{
 
 @media only screen and (max-width:576px) {
     .cards{
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 	}
 	.recent-grid{
 		grid-template-columns: 100%;
@@ -442,8 +442,11 @@ td .status{
 	header h3 span{
 		display: none;
 	}
-	#nav-toggle:checked + .sidebar{
+	.sidebar{
 		width: 100%;
+	}
+	#nav-toggle:checked header{
+		background-color: var(--color-dark)
 	}
 }
 
@@ -477,42 +480,5 @@ td .status{
 		font-size: 0.9rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
