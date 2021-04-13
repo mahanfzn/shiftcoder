@@ -33,6 +33,178 @@ a{
     color: var(--color-red);
 }
 
+
+/*          FOR RESPOSIVE : AMIRMAHDI S            */
+
+
+@media screen and (max-width: 770px) {
+	#nav-toggle:checked ~ .sidebar {
+		width: 75px !important;
+	}
+	.sidebar {
+		width: 100vw !important;
+	}
+	.main-content header {
+		position: absolute;
+		width: 100%;
+		right: 0;
+		box-shadow: none;
+		background-color: var(--color-dark);
+	}
+	.main-content header h4,.main-content header small,.hamburger-icon-header {
+		color: white;
+	}
+	.x-button-2.active {
+		transform: rotate(-135deg) translateX(-1px);
+		background-color: white;
+	}
+
+	.x-button-3.active {
+		transform: rotate(135deg) translateX(-0.5px);
+		background-color: white;
+	}
+}
+
+
+/*                 END RESPOSIVE : AMIRMAHDI S                       */
+
+
+.x-button-1, .x-button-2, .x-button-3 {
+	width: 30px;
+	background: #727272;
+	height: 2px;
+	border-radius: 20px;
+	position: relative;
+	transition: .3s;
+	top: 7px;
+	right: 7px;
+}
+
+.x-button-2 {
+	transform: translateY(-10px) rotate(0);
+}
+
+.x-button-3 {
+	transform: translateY(5px) rotate(0);
+}
+
+.x-button-1.active-x-button {
+	opacity: 0;
+}
+
+.x-button-2.active-x-button {
+	transform: rotate(-135deg) translateX(-1px);
+	color: white;
+}
+
+.x-button-3.active-x-button {
+	transform: rotate(135deg) translateX(-0.5px);
+	color: white;
+}
+
+#parent_icon_menu_toggler {
+	padding: 10px 20px;
+	background-color: transparent;
+	border: none;
+}
+
+#icon_menu_toggler {
+	padding: 10px;
+}
+
+.card-single:hover div h1, .card-single:hover div span,
+.card-single:hover, .card-single:hover div svg,
+.card-single:hover:last-child div h1,
+.card-single:hover:last-child div span{
+	color: white !important;
+	cursor: pointer;
+}
+
+.card-single:hover, .card-single:hover:last-child {
+	background-color: var(--color-dark) !important;
+	box-shadow: 0 2px 5px rgb(0, 0, 0.5%) !important;
+}
+
+.card-single, .card-single div h1, .card-single div span , .card-single div svg {
+	transition: .3s;
+}
+
+.card-single:last-child div h1 {
+	color: black !important;
+}
+
+.card-single:last-child div svg {
+	color: var(--color-red);
+}
+
+.card-single:last-child {
+	background-color: white !important;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2) !important;
+}
+
+.sidebar-menu ul li a:not(.active-menu-link) {
+	transition: .3s;
+}
+
+.sidebar-menu ul li a.active-hover-menu {
+	background-color: #fff;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	color: var(--color-dark) !important;
+	font-size: 1.1rem;
+	border-radius: 0 50px 50px 0;
+}
+
+.table-responsive {
+	overflow: hidden !important;
+}
+
+.table-responsive table tbody tr:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+
+.card-now {
+	overflow: hidden;
+}
+
+.card-new {
+	overflow: hidden;
+}
+
+.customer:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+
+#h3-for-menu {
+	display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#h3-for-menu span {
+	position: absolute;
+    right: 100px;
+    bottom: 30px;
+}
+
+#h3-for-menu a {
+	position: absolute;
+    right: 100px;
+    bottom: 30px;
+}
+
+.search-wrapper {
+	position: absolute;
+    right: 500px;
+    top: 25px;
+}
+
+
+/*                 END ADVANCED STYLE: AMIRMAHDI S                       */
+
+
 .sidebar{
 	width: 345px;
 	position: fixed;
@@ -161,7 +333,7 @@ header h3{
 	display: flex;
 	align-items: center;
 	overflow-x: hidden;
-	margin-top: 0.25rem
+	margin-top: 0.25rem;
 }
 
 .search-wrapper-icon{
@@ -195,7 +367,7 @@ header h3{
 
 .user-wrapper small{
 	display: inline-block;
-	color: var(--tex-gray);
+	color: var(--text-gray);
 	font-size: 0.9rem;
 }
 
@@ -239,10 +411,6 @@ main{
 .card-single:last-child{
 	background-color: var(--color-dark);
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
-}
-
-.card-single:last-child div:first-child span{
-	color: #fff;
 }
 
 .card-single:last-child div:last-child{
@@ -303,7 +471,7 @@ tabel{
 
 .card-header-new button:hover {
 	box-shadow: none;
-	color: var(--dark-color);
+	color: var(--color-dark);
 	background-color: #fff;
 }
 
@@ -323,10 +491,6 @@ thead tr{
 
 .card-head-customer h5{
 	margin-bottom: 1rem;
-}
-
-thead th{
-/*	font-weight: 500;*/
 }
 
 th,
@@ -405,71 +569,11 @@ td .status{
 	margin-left: 0.2rem;
 }
 
+
 /* Responsive */
 
-@media only screen and (min-width:576px) {
-    .cards{
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.recent-grid{
-		grid-template-columns: 100%;
-	}
-}
 
-@media only screen and (max-width:576px) {
-    .cards{
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.recent-grid{
-		grid-template-columns: 100%;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-    .cards{
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.recent-grid{
-		grid-template-columns: 60% 40%;
-	}
-	.info h6{
-		font-size: 0.8rem;
-	}
-	
-}
-
-@media only screen and (max-width: 768px) {
-	header h3 span{
-		display: none;
-	}
-	.sidebar{
-		width: 100%;
-	}
-	#nav-toggle:checked header{
-		background-color: var(--color-dark)
-	}
-}
-
-@media only screen and (max-width: 992px){
-	.search-wrapper{
-		display: none;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-    .cards{
-		grid-template-columns: repeat(3, 1fr);
-	}
-	.recent-grid{
-		grid-template-columns: 65% 35%;
-	}
-	.info h6{
-		font-size: 0.8rem;
-	}
-	
-}
-
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.cards{
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -479,6 +583,61 @@ td .status{
 	.info h6{
 		font-size: 0.9rem;
 	}
+	.card-single h1{
+		font-size: 1.5rem;
+	}
 }
 
+@media screen and (max-width: 992px){
+	.search-wrapper{
+		display: none;
+	}
+	.card-single h1{
+		font-size: 1.4rem;
+	}
+	    .cards{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.recent-grid{
+		grid-template-columns: 65% 35%;
+	}
+	.info h6{
+		font-size: 0.8rem;
+	}
+	.user-wrapper h4{
+		font-size: 1rem;
+	}
+}
 
+@media screen and (max-width: 768px) {
+	header h3 span{
+		display: none;
+	}
+	#nav-toggle:checked + .sidebar{
+		width: 100%;
+	}
+	.card-single h1{
+		font-size: 1.3rem;
+	}
+	.cards{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.recent-grid{
+		grid-template-columns: 60% 40%;
+	}
+	.info h6{
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width:576px) {
+    .cards{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.recent-grid{
+		grid-template-columns: 100%;
+	}
+	.card-single h1{
+		font-size: 1.2rem;
+	}
+}
