@@ -148,41 +148,42 @@
                                             <i class="fal fa-cogs icons-header-li"></i> تنظیمات بیشتر
                                         </a>
                                     </li>
+								</li>
                             </ul>
-                            </li>
-                            <li class="nav-item dropdown list-style-li-header">
-                                <a class="nav-link dropdown-toggle link-navbar-header" href="#" id="navbarDropdown-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="images/logo-icon-150px-shiftcoder.png" alt="پروفایل" id="profile-header">
-                                    <span id="span-profile">پروفایل</span>
-                                </a>
-                                <ul class="dropdown-menu bgcolo-ul-header ul-header-profile" aria-labelledby="navbarDropdown-2">
-                                    <li>
-                                        <a class="dropdown-item text-white hover-link-dropdown" href="#">
-                                            <i class="fal fa-sliders-v icons-header-li"></i> پنل مدیریت
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item text-white hover-link-dropdown" href="#">
-                                            <i class="fal fa-users-cog icons-header-li"></i> دوره های شما
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <li>
-                                            <a class="dropdown-item text-white hover-link-dropdown" href="#">
-                                                <i class="fal fa-scroll icons-header-li"></i> ارسال تیکت
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-white hover-link-dropdown no-hover-link-dropdown" href="#">
-                                                <i class="fal fa-cogs icons-header-li"></i> تنظیمات بیشتر
-                                            </a>
-                                        </li>
+                        </li>
+						<li class="nav-item dropdown list-style-li-header">
+							<a class="nav-link dropdown-toggle link-navbar-header" href="#" id="navbarDropdown-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="images/logo-icon-150px-shiftcoder.png" alt="پروفایل" id="profile-header">
+								<span id="span-profile">پروفایل</span>
+							</a>
+							<ul class="dropdown-menu bgcolo-ul-header ul-header-profile" aria-labelledby="navbarDropdown-2">
+								<li>
+									<a class="dropdown-item text-white hover-link-dropdown" href="#">
+										<i class="fal fa-sliders-v icons-header-li"></i> پنل مدیریت
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item text-white hover-link-dropdown" href="#">
+										<i class="fal fa-users-cog icons-header-li"></i> دوره های شما
+									</a>
+								</li>
+								<li>
+									<li>
+										<a class="dropdown-item text-white hover-link-dropdown" href="#">
+											<i class="fal fa-scroll icons-header-li"></i> ارسال تیکت
+										</a>
 									</li>
-                                </ul>
-                            </li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li>
+										<a class="dropdown-item text-white hover-link-dropdown no-hover-link-dropdown" href="#">
+											<i class="fal fa-cogs icons-header-li"></i> تنظیمات بیشتر
+										</a>
+									</li>
+								</li>
+							</ul>
+						</li>
                     </div>
                 </div>
             </nav>
@@ -199,316 +200,596 @@
 						<input type="text" placeholder="دنبال چه دوره ای میگردی ..." id="input-search">
 					</div>
 				</div>
-				<div id="container-body">
-					<aside id="sidebar-main" class="col-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod error ut. Dolorem, laboriosam labore rerum quidem consequatur repudiandae tenetur quaerat quae saepe molestias veritatis provident, neque libero, accusantium nulla.
-					</aside>
-					<section id="container" class="card">
-						<div class="container" class="container-cards">
-							<div class="row">
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-1.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">آموزش رایگان html و css پروژه محور</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
-													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
+				<div id="container-body" class="container">
+					<div class="row">
+						<aside id="sidebar-main" class="col-12 col-lg-3">
+							<div class="accordion container-accoradion-sidebar" id="accordionExample">
+							  <div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+								  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									<span class="span-title-btn-accordion">فیلتر قیمت ها</span>
+								  </button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								  <div class="accordion-body">
+									  <div id="content-first-accordion">
+										  <button class="btn-first-accordion active-btn-accordion">همه</button>
+										  <button class="btn-first-accordion">رایگان</button>
+										  <button class="btn-first-accordion">خریدنی</button>
+									  </div>
+								  </div>
 								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-3.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">آموزش رایگان GitLab , GitHub , Git</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
-													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
+							  </div>
+							</div>
+							<div class="accordion container-accoradion-sidebar" id="accordionExample">
+							  <div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									<span class="span-title-btn-accordion">مرتب سازی دوره ها</span>
+								  </button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								  <div class="accordion-body">
+									  <div class="content-first-accordion">
+									  	<div id="content-second-accordion">
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+											  <label class="form-check-label" for="flexRadioDefault1">
+												جدید ترین
+											  </label>
 											</div>
-										</a>
-									</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+											  <label class="form-check-label" for="flexRadioDefault2">
+												پربازدید ترین
+											  </label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+											  <label class="form-check-label" for="flexRadioDefault3">
+												ارزان ترین
+											  </label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+											  <label class="form-check-label" for="flexRadioDefault4">
+												گران ترین
+											  </label>
+											</div>
+										</div>
+									  </div>
+								  </div>
 								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-4.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">دوره آموزشی رایگان Photoshop</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
-													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
-											</div>
-										</a>
+							  </div>
+							</div>
+							<div class="accordion container-accoradion-sidebar" id="accordionExample">
+							  <div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<span class="span-title-btn-accordion">فیلتر دسته بندی ها</span>
+								  </button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								  <div class="accordion-body">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="programming-checkbox" checked>
+									  <label class="form-check-label" for="programming-checkbox">
+										برنامه نویسی
+									  </label>
 									</div>
-								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-5.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">آموزش رایگان sass پروژه محور</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
-													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
-											</div>
-										</a>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="framework-library-checkbox">
+									  <label class="form-check-label" for="framework-library-checkbox">
+										فریمورک و کتابخانه
+									  </label>
 									</div>
-								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-6.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">دوره آموزشی رایگان Illustrator </h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
-													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
-											</div>
-										</a>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="web-design-checkbox">
+									  <label class="form-check-label" for="web-design-checkbox">
+										طراحی وب
+									  </label>
 									</div>
-								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-10.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">آموزش رایگان Less پروژه محور</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
-													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
-											</div>
-										</a>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="graphic-checkbox">
+									  <label class="form-check-label" for="graphic-checkbox">
+										گرافیک
+									  </label>
 									</div>
+								  </div>
 								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-8.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">دوره آموزشی رایگان Visual Studio Code</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
+							  </div>
+							</div>
+						</aside>
+					
+						<section id="container" class="card col-12 col-lg-9">
+							<div class="container" id="container-cards">
+								<div class="row" id="row-container-cards">
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-1.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان html و css پروژه محور</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
 													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
 													</div>
 												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
-													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
-													</div>
-												</div>
-											</div>
-										</a>
+											</a>
+										</div>
 									</div>
-								</div>
-								<div class="col-6 col-md-4 col-lg-3">
-									<div class="card container-card">
-										<a href="#" class="anchor-cards">
-											<img src="images/img-7.jpg" class="card-img-top img-card" alt="...">
-											<div class="card-body">
-												<h5 class="card-title title-card">دوره آموزشی رایگان Dreamweaver</h5>
-												<div class="container-items-card">
-													<div>
-														<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
-														<span class="span-item-card">مدرس</span>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-3.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان GitLab , GitHub , Git</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
 													</div>
-													<div class="chat-display-item-none">
-														<img src="icons/chat.png" alt="chat" class="img-teacher-card">
-														<span class="span-item-card">0</span>
-													</div>
-													<div>
-														<img src="icons/student-2.png" alt="student" class="img-teacher-card">
-														<span class="span-item-card">0</span>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
 													</div>
 												</div>
-												<div class="container-time-payment-card">
-													<div>
-														<img src="icons/clock.png" alt="clock" class="img-teacher-card">
-														<span class="time-p-card">00,00,00</span>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-4.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">دوره آموزشی رایگان Photoshop</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
 													</div>
-													<div>
-														<span class="payment-card">رایگان</span>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
 													</div>
 												</div>
-											</div>
-										</a>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-5.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان sass پروژه محور</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-6.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">دوره آموزشی رایگان Illustrator </h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-10.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان Less پروژه محور</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-8.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">دوره آموزشی رایگان VS Code</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-7.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">دوره آموزشی رایگان Dreamweaver</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-1.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان html و css پروژه محور</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-5.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان sass پروژه محور</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-6.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">دوره آموزشی رایگان Illustrator </h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-10 col-md-6 col-lg-4 col-card">
+										<div class="card container-card">
+											<a href="#" class="anchor-cards">
+												<img src="images/img-10.jpg" class="card-img-top img-card" alt="...">
+												<div class="card-body">
+													<h5 class="card-title title-card">آموزش رایگان Less پروژه محور</h5>
+													<div class="container-items-card">
+														<div>
+															<img src="icons/teacher-2.png" alt="Teacher" class="img-teacher-card">
+															<span class="span-item-card">مدرس</span>
+														</div>
+														<div class="chat-display-item-none">
+															<img src="icons/chat.png" alt="chat" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+														<div>
+															<img src="icons/student-2.png" alt="student" class="img-teacher-card">
+															<span class="span-item-card">0</span>
+														</div>
+													</div>
+													<div class="container-time-payment-card">
+														<div>
+															<img src="icons/clock.png" alt="clock" class="img-teacher-card">
+															<span class="time-p-card">00,00,00</span>
+														</div>
+														<div>
+															<span class="payment-card">رایگان</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-12" id="pagination">
+										<nav aria-label="Page navigation example">
+										  <ul class="pagination">
+											<li class="page-item disabled">
+											  <a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											  </a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item">
+											  <a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											  </a>
+											</li>
+										  </ul>
+										</nav>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+					</div>
 				</div>
 			</main>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<footer class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-10 col-md-6 col-lg-4" id="container-title-footer">
+                <h4 id="title-info-footer">لورم ایپسوم</h4>
+                <p id="title-p-footer">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                    گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+            </div>
+            <div class="col-10 col-md-6 col-lg-4" id="container-newsletters-footer">
+                <input type="email" id="newsletters-footer-email" placeholder="آدرس ایمیل">
+                <input type="number" id="newsletters-footer-number" placeholder="شماره موبایل">
+                <input type="submit" id="newsletters-footer-submit" value="عضویت در خبرنامه">
+            </div>
+            <div class="col-10 col-md-6 col-lg-4" id="container-app-footer">
+                <div>
+                    <a href="#"><img src="images/GooglePlay.png" alt="GooglePlay" class="img-app-footer"></a>
+                    <a href="#"><img src="images/SibApp.png" alt="SibApp" class="img-app-footer"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="svg/bazar.svg" alt="bazar" class="img-app-footer"></a>
+                    <a href="#"><img src="svg/myket.svg" alt="myket" class="img-app-footer"></a>
+                </div>
+            </div>
+        </div>
+        <div id="container-footer-bottom">
+            <div class="col-6" id="container-copyright-footer">
+                <p id="p-copyright-footer">استفاده از مطالب وبسایت آموزشی شیفت کدر فقط برای مقاصد غیرتجاری و با
+                    ذکر منبع بلامانع است.</p>
+            </div>
+            <div class="col-6" id="container-social-footer">
+                <a href="#"><img src="icons/youtube-2.png" alt="youtube" title="youtube" class="img-social-footer"></a>
+                <a href="#"><img src="icons/telegram-2.png" alt="telegram" title="telegram"
+                        class="img-social-footer"></a>
+                <a href="#"><img src="icons/linkedin-2.png" alt="linkedin" title="linkedin"
+                        class="img-social-footer"></a>
+                <a href="#"><img src="icons/instagram-2.png" alt="instagram" title="instagram"
+                        class="img-social-footer"></a>
+            </div>
+        </div>
+    </footer>
+    <section id="hero">
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+                </path>
+            </defs>
+            <g class="">
+                <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+                </use>
+            </g>
+            <g class="wave2">
+                <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+                </use>
+            </g>
+            <g class="wave3">
+                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+                </use>
+            </g>
+        </svg>
+    </section>
+	
 
 
 
