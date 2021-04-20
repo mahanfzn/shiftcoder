@@ -185,6 +185,8 @@ input[type=number] {
 	margin-left: 8px;
 }
 
+/*		start sidebar		*/
+
 .condition-course{
 	margin-top: 2rem;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -483,6 +485,114 @@ input[type=number] {
 	font-size: 0.9rem;
 }
 
+/*		end sidebar		*/
+
+/*		start content		*/
+
+#content-container{
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin-top: 2rem;
+	border-radius: 10px;
+}
+
+#container-img-title{
+	display: flex;
+	justify-content: center;
+	margin-top: 1.25rem;
+}
+
+#img-title-content{
+	width: 97%;
+	height: auto;
+	border-radius: 15px;
+}
+
+#text-content{
+	margin: 2rem 1rem; 
+}
+
+#text-content h2{
+	font-size: 19px;
+	font-family: IranSansBold;
+	margin-bottom: 3rem;
+}
+
+#text-content p{
+	line-height: 2rem;
+	font-size: 15px;
+}
+
+.container-prerequisites{
+	margin-top: 2rem;
+}
+
+.container-prerequisites h5{
+	font-size: 20px;
+}
+
+.container-prerequisites ul{
+	margin-top: 1.5rem;
+	font-size: 15px;
+}
+
+.li-checked{
+	list-style: none;
+	margin-bottom: 1rem;
+}
+
+.li-checked::before{
+	content: "";
+	background-image: url("../svg/checked.svg");
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	margin-right: -32px;
+}
+
+#title-support{
+	font-size: 16px;
+	font-family: IranSansBold;
+	margin-bottom: 2rem;
+	color: #444;
+}
+
+.paragraph-support{
+	font-size: 14.5px;
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 1rem;
+}
+
+.paragraph-support:last-child{
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+}
+
+.icon-support{
+	color: #555;
+	margin: 0 5px -2px 5px;
+	font-size: 18px;
+}
+
+.icon-title-support{
+	font-size: 20px;
+	color: #444;
+	margin: 0 0 -3px 5px;
+}
+
+.bold-text-support{
+	color: #444;
+	letter-spacing: 0.8px;
+}
+
+.mt-h2-accordion{
+	margin-top: 3rem;
+}
+
+.accordion-button:focus {
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: none;
+}
 
 
 
@@ -514,6 +624,7 @@ input[type=number] {
 
 
 
+/*		end content		*/
 
 /*		end body		*/
 
