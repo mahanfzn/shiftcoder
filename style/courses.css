@@ -64,7 +64,8 @@ input[type=number] {
 	background-size:cover;
 	background-position:center;
 	background-repeat:repeat-y;
-	position:relative
+	position:relative;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 #custom-navbar-header {

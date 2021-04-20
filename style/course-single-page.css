@@ -63,7 +63,8 @@ input[type=number] {
 	background-size:cover;
 	background-position:center;
 	background-repeat:repeat-y;
-	position:relative
+	position:relative;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 #custom-navbar-header {
@@ -166,6 +167,348 @@ input[type=number] {
 /*		end header		*/
 
 /*		start body		*/
+
+#main-container{
+	margin-top: 2rem;
+}
+
+#head-title{
+	font-size: 1.5rem;
+	font-family: IranSansBold;
+	margin-bottom: 1.5rem;
+	
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    transform: rotate(180deg);
+    margin-right: -5px;
+	margin-left: 8px;
+}
+
+.condition-course{
+	margin-top: 2rem;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	padding: 1.5rem 1.5rem;
+}
+
+.container-info-aside{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.price-course{
+	display: flex;
+	justify-content: center;
+}
+
+#text-price{
+	font-size: 1rem;
+	font-family: Sahel;
+	margin-left: 0.5rem;
+}
+
+#value-price{
+	font-size: 1.2rem;
+	color: #50b826;
+	font-family: IranSansBold;
+}
+
+.line-aside{
+	width: 100%;
+	height: 1px;
+	background-color: #ddd;
+	border-radius: 25px;
+	margin: 1rem 0;
+}
+
+.container-title-line-aside{
+	display: flex;
+	flex-direction: row;
+}
+
+.icon-title-aside{
+	margin: 2px 0 0 0.4rem;
+	color: var(--color-gray);
+}
+
+.paragraph-info-aside{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.value-info-aside{
+	font-size: 14px;
+	font-family: IranSansBold;
+	margin: 0.2rem 0 0 0;
+	padding: 0;
+	color: var(--color-gray);
+}
+
+.state-course{
+	color: #50b826;
+}
+
+#container-register-course{
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.icon-register{
+	font-size: 1.3rem;
+	margin-bottom: -4px;
+	color: #fff;
+	margin-left: 0.5rem;
+}
+
+#btn-register-course{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	background-color: #50b826;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	transition: box-shadow 0.5s;
+}
+
+#btn-register-course:hover{
+	box-shadow: none;
+}
+
+#container-profile-teacher{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#img-info-teacher{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#container-name-job-teacher{
+	margin: 0 1rem 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#container-img-name-job-teacher{
+	display: flex;
+	flex-direction: row;
+}
+
+#name-info-teacher{
+	font-size: 1.1rem;
+	font-family: IranSansBold;
+}
+
+#job-info-teacher{
+	font-family: sahel;
+	color: var(--color-gray);
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+#container-profile-job{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: -15px;
+	text-align: left;
+}
+
+#profile-info-teacher{
+	color: var(--color-red);
+	font-family: sahel;
+}
+
+#cv-info-teacher{
+	color: #50b826;
+	font-family: sahel;
+}
+
+.container-info-teacher{
+	margin-top: 2rem;
+}
+
+.container-line-info-line{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.title-info-teacher{
+	position: absolute;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	padding: 0 10px;
+	color: #333;
+	font-size: 15px;
+}
+
+.line-info-aside{
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	border-radius: 25px;
+}
+
+.paragraph-info-teacher{
+	font-size: 14px;
+	color: var(--color-gray);
+	margin: 1.8rem 0.5rem 0;
+	text-align: center;
+}
+
+.margin-container-line-info-line{
+	margin: 2rem 0 2rem;
+}
+
+.listitem-courses-teacher{
+	margin-bottom: 0.5rem;
+	list-style-type: circle;
+}
+
+.anchor-courses-teacher{
+	font-size: 14.5px;
+	color: #222;
+	transition: all 0.2s;
+}
+
+.anchor-courses-teacher:hover{
+	color: #50b826;
+}
+
+.condition-course-mb{
+	padding-bottom: 12px !important;
+}
+
+#container-share-media{
+	display: flex;
+	justify-content: space-between;
+}
+
+#text-share-media{
+	font-size: 14px;
+	font-family: IranSansBold;
+}
+
+#container-icons-share-social{
+	display: flex;
+}
+
+.container-icon-share-social{
+	width: 32px;
+	height: 32px;
+	background-color: transparent;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 50%;
+	margin: -7.5px 0.5rem 0 0;
+	transition: all 0.2s;
+}
+
+.container-icon-share-social:hover{
+	box-shadow: 0 0 10px var(--color-red);
+	opacity: 0.8;
+}
+
+.icon-share-social{
+	font-size: 20.5px;
+	color: #444;
+	margin: 6px 7px 0 0;
+	transition: all 0.2s;
+}
+
+.container-icon-share-social:hover .icon-share-social{
+	color: var(--color-red);
+}
+
+
+.icon-telegram-share{
+	margin: 6px 8.5px 0 0;
+}
+
+.icon-whatsapp-share{
+	margin: 6px 7px 0 0;
+}
+
+#container-view-comment-number{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.3rem;
+}
+
+#view-aside{
+	display: flex;
+	margin-left: 1.3rem;
+}
+
+#comment-aside{
+	display: flex;
+	margin-right: 1.6rem;	
+}
+
+#line-y-aside{
+	width: 1px;
+	height: 25px;
+	background-color: #ccc;
+	border-radius: 25px;
+}
+
+.icon-view-comment-number{
+	font-size: 20px;
+	color: #555;
+	margin-left: 0.5rem;
+}
+
+.paragraph-view-comment-number{
+	color: #444;
+	font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
