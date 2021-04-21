@@ -553,7 +553,8 @@ input[type=number] {
 	font-size: 16px;
 	font-family: IranSansBold;
 	margin-bottom: 2rem;
-	color: #444;
+	color: var(--color-red);
+	opacity: 0.92;
 }
 
 .paragraph-support{
@@ -576,7 +577,8 @@ input[type=number] {
 
 .icon-title-support{
 	font-size: 20px;
-	color: #444;
+	color: var(--color-red);
+	opacity: 0.9;
 	margin: 0 0 -3px 5px;
 }
 
@@ -594,37 +596,144 @@ input[type=number] {
     box-shadow: none;
 }
 
+.accordion-btn{
+	font-size: 15px;
+	color: #444;
+}
 
+.accordion-button:not(.collapsed) {
+    color: var(--color-red);
+	background-color: #FDF8F8;
+}
 
+.container-Section{
+	border-bottom: 1px dashed #ddd;
+	margin-top: 1.7rem;
+	padding-bottom: 0.9rem;
+	display: flex;
+	justify-content: space-between;
+}
 
+.container-Section:last-child{
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
+.container-right-section{
+	display: flex;
+}
 
+.video-icon{
+	margin: 0 0 0 10px;
+	color: #666;
+}
 
+.title-section{
+	font-size: 15px;
+	color: #222;
+	margin: 0;
+}
 
+.line-section{
+	width: 1px;
+	height: 20px;
+	background-color: #ddd;
+	margin: 0 1rem;
+}
 
+.video-time{
+	margin: -5px 0 0 0;
+}
 
+.container-left-section{
+	display: flex;
+}
 
+.icon-left-section{
+	font-size: 20px;
+	color: var(--color-red);
+	opacity: 0.8;
+	transition: all 0.2s;
+	margin-right: 1rem;
+}
 
+.icon-left-section:hover{
+	opacity: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.accordion-body{
+	padding-top: .1px;
+}
 
 /*		end content		*/
+
+/*		start comment		*/
+
+#comment-container{
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin-top: 2rem;
+	border-radius: 10px;
+}
+
+#header-comment{
+	margin: 1.3rem 1rem 0 0;
+}
+
+#header-comment h5{
+	font-size: 16px;
+	font-family: IranSansBold;
+	color: #222;
+}
+
+.icon-comment{
+	font-size: 20px;
+	margin: 0 0 -2.5px 10px;
+	color: #555;
+}
+
+#number-all-comment{
+	margin-right: 0.2rem;
+}
+
+#container-send-comment{
+	margin: 2rem 1rem;
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+	border-radius: 10px;
+}
+
+#container-send-comment p{
+	font-size: 15px;
+	color: #555;
+	padding: 1rem 1.3rem;
+}
+
+.label-email-name{
+	width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		end comment		*/
 
 /*		end body		*/
 
@@ -911,6 +1020,15 @@ input[type=number] {
     .chat-display-item-none {
         display: none
     }
+	.video-time{
+		display: none;
+	}
+	.line-section{
+		display: none;
+	}
+	.video-icon{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 992px) {
