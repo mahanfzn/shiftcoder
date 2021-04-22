@@ -6,7 +6,13 @@
 	<title>Course Page</title>
 	<link rel="stylesheet" href="frameworks/bootstrap/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="frameworks/FontAwesome/css/all.min.css">
+	<link rel="stylesheet" href="library/plyr/plyr.css">
     <link rel="stylesheet" href="style/course-single-page.css">
+	<style>
+         :root {
+            --plyr-color-main: #eb3233;
+        }
+    </style>
 </head>
 <body>
 	<div class="container-fluid" id="custom-container-fluid-header">
@@ -382,7 +388,10 @@
 					
 					<section id="content-container" class="col-12 col-lg-8">
 						<div id="container-img-title">
-							<img src="images/img-10.jpg" alt="آموزش رایگان HTML و CSS پروژه محور" id="img-title-content">
+<!--							<img src="images/img-10.jpg" alt="آموزش رایگان HTML و CSS پروژه محور" id="img-title-content">-->
+							<video id="player" playsinline controls poster="images/img-10.jpg" class="video-title-content">
+        						<source src="videos/video-1.mp4" type="video/mp4" class="video-title-content">
+   						    </video>
 						</div>
 						<div id="text-content">
 							<h2>آموزش رایگان HTML و CSS به صورت صفر تا صد ، کاملا پروژه محور</h2>
@@ -913,5 +922,9 @@
 </body>
 	<script src="frameworks/bootstrap/bootstrap.min.js"></script>
 	<script src="frameworks/FontAwesome/js/all.min.js"></script>
+	<script src="library/plyr/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
 	<script src="scripts/course-single-page.js"></script>
 </html>
