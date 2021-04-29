@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* CSS Document */
 
 @font-face {
@@ -39,6 +38,7 @@
     margin: -330px 0px;
     position: absolute;
     z-index: 1;
+    ;
 }
 
 #container-form {
@@ -76,9 +76,8 @@
     text-align: left;
 }
 
-.inputs:focus{
+.inputs:focus {
     border-bottom: 2px solid #7BC5ED;
-
 }
 
 .inputs::placeholder {
@@ -106,11 +105,12 @@
     transition: all .5s;
 }
 
-#submit:hover {
+/* #submit:hover {
     background-color: #7BC5ED;
     color: #000;
     transition: all .5s;
-}
+    
+} */
 
 .anchor-form {
     color: aliceblue;
@@ -123,5 +123,15 @@
 .anchor-form:hover {
     color: #7BC5ED;
     transition: all .5s;
+}
 
+#meesage {
+    border-radius: 50%;
+}
+
+#spiner {
+    display: none;
+    margin-right: 150px;
+    height: 100px;
+    width: 100px;
 }

@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* CSS Document */
 
 @font-face {
@@ -76,9 +75,8 @@
     text-align: left;
 }
 
-.inputs:focus{
+.inputs:focus {
     border-bottom: 2px solid #7BC5ED;
-
 }
 
 .inputs::placeholder {
@@ -123,5 +121,11 @@
 .anchor-form:hover {
     color: #7BC5ED;
     transition: all .5s;
+}
 
+#spiner {
+    display: none;
+    margin-right: 150px;
+    height: 100px;
+    width: 100px;
 }

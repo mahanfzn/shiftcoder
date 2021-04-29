@@ -4,7 +4,6 @@
 <head>
     <title>Signin Form</title>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="frameworks/bootstrap/bootstrap.rtl.min.css">
     <link rel="stylesheet" type="text/css" href="style/style-signin-form.css">
 </head>
@@ -16,24 +15,29 @@
                 <img src="images/avatar-login.png" alt="Avatar" id="avatar-img">
                 <div class="col-9 col-md-7 col-lg-5 col-xl-4" id="container-form">
                     <h2 id="title-heading">فرم ثبت نام</h2>
+                    <div id="meesage"></div>
                     <form action="#" method="get" id="form">
-                        <label for="email-input" class="label-input">نام کاربری :</label>
-                        <input type="email" placeholder="example@domain.com" autofocus autocomplete="on" required
-                            id="email-input" class="inputs">
+                        <label for="usersName" class="label-input">نام کاربری :</label>
+                        <input type="text" placeholder="yourName" autofocus autocomplete="on" required id="usersName"
+                            class="inputs">
                         <label for="email-input" class="label-input">ایمیل :</label>
-                        <input type="email" placeholder="example@domain.com" autofocus autocomplete="on" required
+                        <input type="text" placeholder="example@domain.com" autofocus autocomplete="on" required
                             id="email-input" class="inputs">
-                        <label for="email-input" class="label-input">شماره موبایل :</label>
-                        <input type="email" placeholder="example@domain.com" autofocus autocomplete="on" required
-                            id="email-input" class="inputs">
+                        <label for="phone" class="label-input">شماره موبایل :</label>
+                        <input type="text" placeholder="09--------" autofocus autocomplete="on" required id="phone"
+                            class="inputs">
                         <label for="password-input" class="label-input">گذرواژه :</label>
                         <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
                             autofocus autocomplete="on" required id="password-input" class="inputs">
-                        <label for="email-input" class="label-input">تکرار گذرواژه :</label>
-                        <input type="email" placeholder="example@domain.com" autofocus autocomplete="on" required
-                            id="email-input" class="inputs">
+                        <label for="reapetPass" class="label-input">تکرار گذرواژه :</label>
+                        <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+                            autofocus autocomplete="on" required id="reapetPass" class="inputs">
                         <div id="container-submit">
                             <input type="submit" value="ورود" id="submit">
+
+                        </div>
+                        <div class="showSpiner">
+                            <img src="images/spiner.gif" alt="spiner" id="spiner">
                         </div>
                         <a href="#" class="anchor-form">من قبلا ثبت نام کردم !</a>
                     </form>
@@ -45,6 +49,9 @@
 
 </body>
 <script src="frameworks/bootstrap/bootstrap.min.js"></script>
+<script src="scripts/debugAvatar.js"></script>
 <script src="scripts/script-signin-form.js"></script>
+<script src="scripts/text.js"></script>
+<script src="scripts/singUp.js"></script>
 
 </html>
