@@ -103,6 +103,7 @@
     font-size: 16px;
     animation: all 1s linear;
     transition: all .5s;
+    cursor: not-allowed;
 }
 
 /* #submit:hover {

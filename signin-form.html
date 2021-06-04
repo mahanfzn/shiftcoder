@@ -15,25 +15,29 @@
                 <img src="images/avatar-login.png" alt="Avatar" id="avatar-img">
                 <div class="col-9 col-md-7 col-lg-5 col-xl-4" id="container-form">
                     <h2 id="title-heading">فرم ثبت نام</h2>
-                    <div id="meesage"></div>
                     <form action="#" method="get" id="form">
                         <label for="usersName" class="label-input">نام کاربری :</label>
-                        <input type="text" placeholder="yourName" autofocus autocomplete="on" required id="usersName"
-                            class="inputs">
+                        <input type="text" placeholder="yourName" autofocus autocomplete="on" required
+                            id="usersName" class="inputs validation">
+                            <div id="meesageName"></div>
                         <label for="email-input" class="label-input">ایمیل :</label>
-                        <input type="text" placeholder="example@domain.com" autofocus autocomplete="on" required
-                            id="email-input" class="inputs">
+                        <input type="email" placeholder="example@domain.com" autofocus autocomplete="on" required
+                            id="email-input" class="inputs validation">
+                            <div id="meesageEmail"></div>
                         <label for="phone" class="label-input">شماره موبایل :</label>
-                        <input type="text" placeholder="09--------" autofocus autocomplete="on" required id="phone"
-                            class="inputs">
+                        <input type="text" placeholder="09--------" autofocus autocomplete="on" required
+                            id="phone" class="inputs validation">
+                            <div id="meesagePhone"></div>
                         <label for="password-input" class="label-input">گذرواژه :</label>
                         <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
-                            autofocus autocomplete="on" required id="password-input" class="inputs">
+                            autofocus autocomplete="on" required id="password-input" class="inputs validation">
+                            <div id="meesagePassword"></div>
                         <label for="reapetPass" class="label-input">تکرار گذرواژه :</label>
-                        <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
-                            autofocus autocomplete="on" required id="reapetPass" class="inputs">
+                        <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" autofocus autocomplete="on" required
+                            id="reapetPass" class="inputs validation">
+                            <div id="meesageRepass"></div>
                         <div id="container-submit">
-                            <input type="submit" value="ورود" id="submit">
+                            <input type="submit" value="ورود" id="submit" class="validation" disabled>
 
                         </div>
                         <div class="showSpiner">
@@ -43,15 +47,18 @@
                     </form>
                 </div>
             </div>
+           
         </div>
     </div>
+
 
 
 </body>
 <script src="frameworks/bootstrap/bootstrap.min.js"></script>
 <script src="scripts/debugAvatar.js"></script>
-<script src="scripts/script-signin-form.js"></script>
 <script src="scripts/text.js"></script>
 <script src="scripts/singUp.js"></script>
 
 </html>
+
+
