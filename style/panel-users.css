@@ -198,6 +198,7 @@ a{
 
 /*                 END ADVANCED STYLE: AMIRMAHDI S                       */
 
+/*              start menu and header                 */
 
 .sidebar{
 	width: 345px;
@@ -342,6 +343,17 @@ header h3{
 	font-size: 0.9rem;
 }
 
+
+
+
+
+
+
+
+/*                       end menu and header                               */
+
+/* 				start body				 */
+
 main{
 	margin-top: 85px;
 	padding: 2rem 1.5rem;
@@ -349,197 +361,80 @@ main{
 	min-height: calc(100vh - 90px);
 }
 
-.cards{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 2rem;
-	margin-top: 1rem;
+.all-users {
+	font-size: 1.2rem;
 }
 
-.card-single{
-	display: flex;
-	justify-content: space-between;
-	background-color: #fff;
-	padding: 1rem;
-	border-radius: 10px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-}
-
-.card-single h1{
-	font-size: 2rem;
-	margin-bottom: 1.25rem;
-}
-
-.card-single div:first-child span{
-	color: var(--text-gray);
-}
-
-.card-single div:last-child{
-	color: var(--color-red);
-	font-size: 2rem;
-}
-
-.card-single:last-child{
-	background-color: var(--color-dark);
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
-}
-
-.card-single:last-child div:last-child{
-	color: #fff;
-}
-
-.card-single:last-child h1{
-	color: #fff;
-	font-size: 1.25rem;
-	margin-top: 0.5rem;
-	margin-bottom: 1.6rem;
-}
-
-.card-single:last-child small{
-	color: #fff;
-	font-size: 0.8rem;
-}
-
-.recent-grid{
-	margin-top: 3.5rem;
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: 75% auto;
-}
-
-tabel{
-	border-collapse: collapse;
-}
-
-.card-new{
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-}
-
-.card-header-new{
-	padding: 1rem;
-}
-
-.card-header-new{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.card-header-new button{
-	background-color: var(--color-dark);
-	border-radius: 10px;
-	color: #fff;
+.number-of-users{
 	font-size: 0.9rem;
-	padding: 0.3rem 1rem;
-	border: 1px solid var(--color-dark);
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-	transition: all 0.3s linear;
-	
 }
 
-.card-header-new button:hover {
-	box-shadow: none;
-	color: var(--color-dark);
-	background-color: #fff;
-}
-
-.icon-btn-see-all{
-	margin-bottom: -2px;
-}
-
-thead tr{
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.card-head-customer{
-	display: flex;
-	flex-direction: column;
-	
-}
-
-.card-head-customer h5{
-	margin-bottom: 1rem;
-}
-
-th,
-td{
-	padding: 0.5rem 1rem;
-	font-size: 0.9rem;
-	color: #222;
-}
-
-td .status{
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	border-radius: 50%;
-	margin-left: 0.2rem;
-}
-
-.orange-status{
-	background-color: #ff8000;
-}
-
-.green-status{
-	background-color: #00cc00;
-}
-
-.table-responsive{
-	width: 100%;
-	overflow-x: auto;
-}
-
-.customer{
-	align-items: center;
-	padding: 0.5rem 1rem;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.customer:last-child{
-	border-bottom: none;
-}
-
-.info{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.info img{
-	border-radius: 50%;
-}
-
-.info h6{
-	font-size: 0.9rem;
-	font-weight: 600;
-	color: #222;
-	text-align: left;
-	margin-bottom: 0;
-}
-
-.content{
+.container-create-new-user{
 	display: flex;
 	justify-content: flex-end;
-	margin: 0.5rem 1rem 0 0rem;
 }
 
-.content a{
-	transition: all 0.2s linear;
+.btn-create-new-user{
+	border: none;
+	border-radius: 50px;
+	background: #f1f5f9;
+	box-shadow:  2px 2px 3px rgba(0,0,0,0.4),
+    	-10px -10px 10px #ffffff;
+	padding: 0.4rem 1.5rem 0.3rem;
+	font-size: 0.9rem;
+	transition: all 0.5s;
 }
 
-.content a:hover{
-	color: var(--color-red);
+.btn-create-new-user:hover{
+	box-shadow: inset 2px 2px 3px rgba(0,0,0,0.4);
 }
 
-.icon-content-customer{
-	font-size: 1.1rem;
-	margin-right: 0.2rem;
-	margin-left: 0.2rem;
+.container-search-user{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: 10px;
 }
 
+.container-section-control{
+	margin-top: 3rem;
+}
+
+.search-user{
+	border: none;
+	border-radius: 50px;
+	background: #f1f5f9;
+	box-shadow:  2px 2px 3px rgba(0,0,0,0.4),
+    	-10px -10px 10px #ffffff;
+	height: 1.9rem;
+	outline: none;
+	padding: auto 30px;	
+}
+
+.icon-search-user{
+	margin-right: -27px;
+}
+
+.search-user:focus{
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 					end body				 */
 
 /* Responsive */
 
@@ -609,3 +504,6 @@ td .status{
 		font-size: 1.2rem;
 	}
 }
+
+
+/*                   end responsive                 */
