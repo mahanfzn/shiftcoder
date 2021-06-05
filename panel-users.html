@@ -90,12 +90,32 @@
             </div>
             <div class="container container-section-control">
                 <div class="row">
-                    <div class="col-6">
-                        <h3 class="all-users">تمام کاربران <span class="number-of-users">(870)</span></h3>
+                    <div class="col-8 col-md-6 col-container-section-control">
+						<details class="custom-select">
+							<summary class="radios">
+								<input type="radio" name="item" id="default" title="یک گزینه را انتخاب کنید" checked class="input-custom-select">
+								<input type="radio" name="item" id="item1" title="حذف کاربر" class="input-custom-select">
+								<input type="radio" name="item" id="item2" title="مسدود سازی کاربر" class="input-custom-select">
+								<input type="radio" name="item" id="item3" title="آزاد سازی کاربر" class="input-custom-select">
+							</summary>
+							<ul class="list">
+								<li class="li-sucto-select">
+									<label for="item1" class="label-custom-select">حذف کاربر</label>
+								</li>
+								<li class="li-sucto-select">
+									<label for="item2" class="label-custom-select">مسدود سازی کاربر</label>
+								</li>
+								<li class="li-sucto-select">
+									<label for="item3" class="label-custom-select">آزاد سازی کاربر</label>
+								</li>
+							</ul>
+						</details>
+						<button class="btn-apply-select-control">اعمال</button>
+						
                     </div>
-                    <div class="col-6">
+                    <div class="col-4 col-md-6">
                         <div class="container-search-user">
-                            <input type="text" class="search-user col-lg-5">
+                            <input type="text" class="search-user col-12 col-md-5" placeholder="جستجوی کاربر ...">
                             <i class="fal fa-search icon-search-user"></i>
                         </div>
                     </div>

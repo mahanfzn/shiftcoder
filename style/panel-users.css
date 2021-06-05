@@ -379,10 +379,11 @@ main{
 	border-radius: 50px;
 	background: #f1f5f9;
 	box-shadow:  2px 2px 3px rgba(0,0,0,0.4),
-    	-10px -10px 10px #ffffff;
+    	-5px -5px 10px #ffffff;
 	padding: 0.4rem 1.5rem 0.3rem;
 	font-size: 0.9rem;
 	transition: all 0.5s;
+	height: 1.9rem;
 }
 
 .btn-create-new-user:hover{
@@ -405,10 +406,12 @@ main{
 	border-radius: 50px;
 	background: #f1f5f9;
 	box-shadow:  2px 2px 3px rgba(0,0,0,0.4),
-    	-10px -10px 10px #ffffff;
+    	-5px -5px 10px #ffffff;
 	height: 1.9rem;
 	outline: none;
-	padding: auto 30px;	
+	padding-right: 18px;
+	padding-left: 37px;
+	font-size: 0.9rem;
 }
 
 .icon-search-user{
@@ -416,8 +419,170 @@ main{
 }
 
 .search-user:focus{
-	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	box-shadow: inset 2px 2px 3px rgba(0,0,0,0.4),
+		inset -2px -2px 5px rgba(0,0,0,0.1);
 }
+
+.search-user::placeholder{
+	font-size: 0.85rem;
+}
+
+.col-container-section-control{
+	display: flex;
+	flex-direction: row;
+}
+
+.btn-apply-select-control{
+	border: none;
+	border-radius: 50px;
+	background: #f1f5f9;
+	box-shadow:  2px 2px 3px rgba(0,0,0,0.4),
+    	-5px -5px 10px #ffffff;
+	padding: 0.4rem 1.5rem 0.3rem;
+	font-size: 0.9rem;
+	transition: all 0.5s;
+	height: 1.9rem;
+	margin-right: 1rem;
+}
+
+.btn-apply-select-control:hover{
+	box-shadow: inset 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+.custom-select {
+	position: relative;
+	width: 300px;
+	height: 1.9rem;
+}
+
+.custom-select[open] {
+	z-index: 1;
+}
+
+.radios {
+	padding: 0.4rem 1.3rem 0.1rem;
+	cursor: pointer;
+	border-radius: 50px;
+	list-style: none;
+	background: #f1f5f9;
+	box-shadow:  2px 2px 3px rgba(0,0,0,0.4),
+    	-5px -5px 10px #ffffff;
+}
+
+.custom-select[open] .radios {
+	box-shadow: inset 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+.radios::-webkit-details-marker {
+	display: none;
+}
+
+.custom-select[open] .radios:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.radios:after {
+	content: '';
+	display: inline-block;
+	float: left;
+	width: .5rem;
+	height: .5rem;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(-45deg) translate(0%, 75%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms;
+}
+
+.radios:focus {
+	outline: none;
+}
+
+.custom-select[open] .radios:after {
+	transform: rotate(45deg) translate(100%, 0%);
+}
+
+.list {
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 20px;
+	max-height: 200px;
+	overflow-y: auto;
+	box-shadow: 1px 3px 10px rgba(0,0,0,0.25);
+}
+
+.li-sucto-select {
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid #ccc;
+	font-size: 0.89rem;
+	padding-right: 1.25rem;
+	transition: all 0.5s;
+}
+
+.li-sucto-select:hover{
+	color: #555;
+}
+
+.li-sucto-select:first-child {
+	padding-top: 0;
+}
+
+.li-sucto-select:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+summary.radios {
+	counter-reset: radios;
+}
+
+.input-custom-select[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+}
+
+.input-custom-select[type=radio]:checked {
+	display: inline;
+}
+
+.input-custom-select[type=radio]:after {
+	content: attr(title);
+	display: inline;
+	font-size: .9rem;
+}
+
+.list {
+	counter-reset: labels;
+}
+
+.label-custom-select {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 
