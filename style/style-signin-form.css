@@ -106,12 +106,12 @@
     cursor: not-allowed;
 }
 
-/* #submit:hover {
+#submit:hover {
     background-color: #7BC5ED;
     color: #000;
     transition: all .5s;
     
-} */
+}
 
 .anchor-form {
     color: aliceblue;
