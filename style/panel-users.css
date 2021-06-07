@@ -577,16 +577,36 @@ summary.radios {
 	cursor: pointer;
 }
 
+.container-table {
+	overflow-x: auto;
+	min-width: 100%;
+	margin-top: -20px;
+}
 
+.table-row-head {
+	background-color: #1d2231;
+	color: #fff;
+}
 
+.table-head {
+	padding: 1rem 2rem;
+}
 
+.table-info-users{
+	min-width: 100%;
+}
 
+.img-profile-user {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: -5px 0 0 0.5rem;
+}
 
-
-
-
-
-
+.container-profile-user{
+	display: flex;
+	flex-direction: row;
+}
 
 
 

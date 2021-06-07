@@ -76,10 +76,10 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 d-flex mb-3 mb-sm-0">
                         <h3 class="all-users">تمام کاربران <span class="number-of-users">(870)</span></h3>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 d-flex justify-content-start justify-content-sm-end">
                         <div class="container-create-new-user">
                             <a href="#">
                                 <button class="btn-create-new-user">ایجاد کاربر جدید</button>
@@ -90,7 +90,7 @@
             </div>
             <div class="container container-section-control">
                 <div class="row">
-                    <div class="col-8 col-md-6 col-container-section-control">
+                    <div class="col-12 col-md-6 col-container-section-control mb-5 justify-content-between justify-content-md-start">
 						<details class="custom-select">
 							<summary class="radios">
 								<input type="radio" name="item" id="default" title="یک گزینه را انتخاب کنید" checked class="input-custom-select">
@@ -113,15 +113,165 @@
 						<button class="btn-apply-select-control">اعمال</button>
 						
                     </div>
-                    <div class="col-4 col-md-6">
+                    <div class="col-12 col-md-6 mb-5">
                         <div class="container-search-user">
-                            <input type="text" class="search-user col-12 col-md-5" placeholder="جستجوی کاربر ...">
+                            <input type="text" class="search-user col-12 col-md-8" placeholder="جستجوی کاربر ...">
                             <i class="fal fa-search icon-search-user"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            
+			<div class="col-12 container-table">
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col"><input type="checkbox"></th>
+							<th scope="col">نام کاربری</th>
+							<th scope="col">نام کامل</th>
+							<th scope="col">ایمیل</th>
+							<th scope="col">شماره تلفن</th>
+							<th scope="col">نقش</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-1.jpg" alt="Profile" class="img-profile-user">
+										<span>mahan_fzn</span>
+									</div>
+								</a>
+							</td>
+							<td>ماهان فروزنده نیک</td>
+							<td>mahan.forouzandehnick@gmail.com</td>
+							<td>09212885357</td>
+							<td>ادمین</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-3.jpg" alt="Profile" class="img-profile-user">
+										<span>ali.marzban</span>
+									</div>
+								</a>
+							</td>
+							<td>علی اکبر مرزبان باشی</td>
+							<td>marzban.ali@gmail.com</td>
+							<td>09379164548</td>
+							<td>مدیر کل</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-2.jpg" alt="Profile" class="img-profile-user">
+										<span>amir_mehdi_kheyl</span>
+									</div>
+								</a>
+							</td>
+							<td>امیر مهدی خلیلی</td>
+							<td>amirmehdi.khalili@gmail.com</td>
+							<td>09123456789</td>
+							<td>کابر</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-9.jpg" alt="Profile" class="img-profile-user">
+										<span>mahan_fzn</span>
+									</div>
+								</a>
+							</td>
+							<td>ماهان فروزنده نیک</td>
+							<td>mahan.forouzandehnick@gmail.com</td>
+							<td>09212885357</td>
+							<td>ادمین</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-4.jpg" alt="Profile" class="img-profile-user">
+										<span>ali.marzban</span>
+									</div>
+								</a>
+							</td>
+							<td>علی اکبر مرزبان باشی</td>
+							<td>marzban.ali@gmail.com</td>
+							<td>09379164548</td>
+							<td>نویسنده</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-5.jpg" alt="Profile" class="img-profile-user">
+										<span>amir_mehdi_kheyl</span>
+									</div>
+								</a>
+							</td>
+							<td>امیر مهدی خلیلی</td>
+							<td>amirmehdi.khalili@gmail.com</td>
+							<td>09123456789</td>
+							<td>مدرس</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-6.jpg" alt="Profile" class="img-profile-user">
+										<span>mahan_fzn</span>
+									</div>
+								</a>
+							</td>
+							<td>ماهان فروزنده نیک</td>
+							<td>mahan.forouzandehnick@gmail.com</td>
+							<td>09212885357</td>
+							<td>ادمین</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-7.jpg" alt="Profile" class="img-profile-user">
+										<span>ali.marzban</span>
+									</div>
+								</a>
+							</td>
+							<td>علی اکبر مرزبان باشی</td>
+							<td>marzban.ali@gmail.com</td>
+							<td>09379164548</td>
+							<td>کاربر</td>
+						</tr>
+						<tr>
+							<th scope="row"><input type="checkbox"></th>
+							<td>
+								<a href="#">
+									<div class="container-profile-user">
+										<img src="images/profile-8.jpg" alt="Profile" class="img-profile-user">
+										<span>amir_mehdi_kheyl</span>
+									</div>
+								</a>
+							</td>
+							<td>امیر مهدی خلیلی</td>
+							<td>amirmehdi.khalili@gmail.com</td>
+							<td>09123456789</td>
+							<td>کابر</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
         </main>
     </div>
 
